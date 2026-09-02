@@ -1,23 +1,21 @@
-package com.example.task14;
+package com.example.task05;
 
-public class Task14 {
+public class Task05Main {
 
+    public static String solution(int x) {
 
-    public static int reverse(int value) {
+        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
 
-        // TODO напишите здесь код, переставляющий цифры числа в обратном порядке
-
-        return 0;
+        return "FALSE";
     }
 
     public static void main(String[] args) {
         // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
         // например вот так:
         /*
-        int result = reverse(345);
+        String result = solution(1234);
         System.out.println(result);
-         */
+        */
     }
-
 
 }

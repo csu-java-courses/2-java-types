@@ -1,13 +1,13 @@
 package com.example.task10;
 
 import org.assertj.core.api.Assertions;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 
-public class Tests {
+public class Task10MainTest {
 
     private void check(float a, float b, int precision, boolean result) {
-        Assertions.assertThat(Task10.compare(a, b, precision)).as("Input: %s == %s (precision %s)", a, b, precision).isEqualTo(result);
+        Assertions.assertThat(Task10Main.compare(a, b, precision)).as("Input: %s == %s (precision %s)", a, b, precision).isEqualTo(result);
     }
 
     @Test

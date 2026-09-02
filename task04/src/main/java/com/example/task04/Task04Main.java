@@ -1,6 +1,6 @@
 package com.example.task04;
 
-public class Task04 {
+public class Task04Main {
 
     public static float calculate(int a, int b, String operation) {
 

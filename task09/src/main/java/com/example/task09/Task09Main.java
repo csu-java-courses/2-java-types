@@ -1,6 +1,6 @@
 package com.example.task09;
 
-public class Task09 {
+public class Task09Main {
 
     public static double solution() {
         // TODO Устраните ошибку вычисления выражения, не изменяя типы данных у переменных

@@ -1,13 +1,13 @@
 package com.example.task02;
 
 import org.assertj.core.api.Assertions;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 
-public class Tests {
+public class Task02MainTest {
 
     private void check(String input, String output) {
-        Assertions.assertThat(Task02.solution(input)).as("Input: \"%s\"", input).isEqualTo(output);
+        Assertions.assertThat(Task02Main.solution(input)).as("Input: \"%s\"", input).isEqualTo(output);
     }
 
     @Test

@@ -1,19 +1,19 @@
-package com.example.task03;
+package com.example.task13;
 
-public class Task03 {
+public class Task13Main {
 
-    public static int getMetreFromCentimetre(int centimetre) {
+    public static char toUpperCase(char c) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        // TODO привести букву к верхнему регистру
 
-        return 0;
+        return c;
     }
 
     public static void main(String[] args) {
         // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
         // например вот так:
         /*
-        int result = getMetreFromCentimetre(345);
+        char result = solution('x');
         System.out.println(result);
          */
     }

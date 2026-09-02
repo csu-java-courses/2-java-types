@@ -1,6 +1,6 @@
 package com.example.task07;
 
-public class Task07 {
+public class Task07Main {
 
     public static int solution(int n, int m, int k) {
 

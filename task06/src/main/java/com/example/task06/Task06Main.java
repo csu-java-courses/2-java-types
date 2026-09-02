@@ -1,21 +1,21 @@
-package com.example.task13;
+package com.example.task06;
 
-public class Task13 {
+public class Task06Main {
 
-    public static char toUpperCase(char c) {
+    public static int solution(int x, int y) {
 
-        // TODO привести букву к верхнему регистру
+        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
 
-        return c;
+        return 0;
     }
 
     public static void main(String[] args) {
         // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
         // например вот так:
         /*
-        char result = solution('x');
+        int result = solution(12, 34);
         System.out.println(result);
-         */
+        */
     }
 
 }

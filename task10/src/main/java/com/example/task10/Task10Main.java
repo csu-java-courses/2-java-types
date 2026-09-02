@@ -1,6 +1,6 @@
 package com.example.task10;
 
-public class Task10 {
+public class Task10Main {
 
     public static boolean compare(float a, float b, int precision) {
 

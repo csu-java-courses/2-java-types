@@ -4,13 +4,13 @@ import codecheck.CodeParser;
 import com.github.javaparser.ast.body.MethodDeclaration;
 import com.github.javaparser.ast.expr.MethodCallExpr;
 import org.assertj.core.api.Assertions;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-public class Tests {
+public class Task13MainTest {
 
 
     private void check(char input, char output) {
-        Assertions.assertThat(Task13.toUpperCase(input)).as("Input: \"%s\"", input).isEqualTo(output);
+        Assertions.assertThat(Task13Main.toUpperCase(input)).as("Input: \"%s\"", input).isEqualTo(output);
     }
 
     @Test
@@ -26,7 +26,7 @@ public class Tests {
 
     @Test
     public void testContent() throws Exception {
-        MethodDeclaration method = new CodeParser("task13", Task13.class).src("src/main/java").findSingleMethod("toUpperCase");
+        MethodDeclaration method = new CodeParser("task13", Task13Main.class).src("src/main/java").findSingleMethod("toUpperCase");
 
         if (method.findAll(MethodCallExpr.class).size() > 0) {
             Assertions.fail("Стандартные функции (например Character.toUpperCase) в этом задании использовать запрещено");

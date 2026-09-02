@@ -1,13 +1,13 @@
 package com.example.task03;
 
 import org.assertj.core.api.Assertions;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 
-public class Tests {
+public class Task03MainTest {
 
     private void check(int input, int output) {
-        Assertions.assertThat(Task03.getMetreFromCentimetre(input)).as("Input: \"%s\"", input).isEqualTo(output);
+        Assertions.assertThat(Task03Main.getMetreFromCentimetre(input)).as("Input: \"%s\"", input).isEqualTo(output);
     }
 
     @Test

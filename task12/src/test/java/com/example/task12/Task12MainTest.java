@@ -4,17 +4,17 @@ import codecheck.CodeParser;
 import com.github.javaparser.ast.body.MethodDeclaration;
 import com.github.javaparser.ast.body.VariableDeclarator;
 import org.assertj.core.api.Assertions;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.math.BigDecimal;
 
-public class Tests {
+public class Task12MainTest {
 
     private void check(BigDecimal sum, BigDecimal percent, BigDecimal result) {
         sum = sum.setScale(9, BigDecimal.ROUND_HALF_UP);
         percent = percent.setScale(9, BigDecimal.ROUND_HALF_UP);
         result = result.setScale(9, BigDecimal.ROUND_HALF_UP);
-        Assertions.assertThat(Task12.benefit(sum, percent)).as("sum = %s, percent = %s", sum, percent).isEqualTo(result);
+        Assertions.assertThat(Task12Main.benefit(sum, percent)).as("sum = %s, percent = %s", sum, percent).isEqualTo(result);
     }
 
     @Test
@@ -29,7 +29,7 @@ public class Tests {
 
     @Test
     public void testContent() throws Exception {
-        MethodDeclaration method = new CodeParser("task12", Task12.class).src("src/main/java").findSingleMethod("benefit");
+        MethodDeclaration method = new CodeParser("task12", Task12Main.class).src("src/main/java").findSingleMethod("benefit");
         Assertions.assertThat(method.getDeclarationAsString(true, true, true))
                 .as("Method declaration")
                 .isEqualTo("public static BigDecimal benefit(BigDecimal sum, BigDecimal percent)");
